@@ -1,8 +1,8 @@
 $primary-color: #444;
 $secondaty-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../img/male.jpg);
-$background-opacity: 0.9;
+$home-image: url(../img/keyboard.jpg);
+$background-opacity: 0.8;
 
 
 @mixin easeOut {
@@ -30,7 +30,7 @@ $background-opacity: 0.9;
     }
 }
 
-//Set text color - function not mixin becouse back and forth
+//Set text color - function not mixin because back and forth
 @function set-text-color($color) {
     @if(lightness($color) > 40) {
         @return #000;
