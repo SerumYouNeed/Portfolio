@@ -21,7 +21,7 @@
         line-height: 1;
         margin-bottom: 1rem;
     }
-
+    
     ul.menu-nav, div.menu-branding {
         float: none;
         width: 100%;
@@ -31,14 +31,14 @@
             transform: translate3d(0, 0, 0);
         }
     }
-
+    
     .menu-nav {
         height: 75vh;
         //Slide from left
         transform: translate3d(-100%, 0, 0);
         font-size: 24px;
     }
-
+    
     .menu-branding {
         height: 25vh;
         //Slide from right
@@ -69,11 +69,21 @@
 
 //Smartphone
 @include mediaSm {
-    main#home h1 {
-        margin-top: 10vh;
+    main {
+        padding: 2rem;
+        #home h1 {
+            margin-top: 10vh;
+        }
+        
+        .lg-heading {
+            margin-top: 1rem;
+            font-size: 5rem;
+        }
+        
     }
     
     .projects {
         grid-template-columns: repeat(1, 1fr);
     }
+    
 }
